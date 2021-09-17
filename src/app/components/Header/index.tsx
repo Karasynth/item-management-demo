@@ -18,7 +18,8 @@ export const Header = ({ addTodo }: Header.Props): JSX.Element => {
 
   return (
     <header>
-      <h1>Todos</h1>
+      <h1>Marvelous</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
       <TodoTextInput newTodo onSave={handleSave} placeholder="What needs to be done?" />
     </header>
   );
