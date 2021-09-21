@@ -10,8 +10,18 @@ body {
   line-height: 1.4em;
   background: #79818f;
   color: #fff;
+
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+
 }
 
 p{
   color: #8fffee;
+}
+
+.normal {
+  margin: 200px 0 40px 0;
+  position: relative;
 }
