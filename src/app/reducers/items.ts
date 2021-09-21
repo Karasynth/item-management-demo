@@ -6,8 +6,18 @@ import { ItemModel } from 'app/models';
 const initialState: RootState.ItemState = [
   {
     id: 1,
-    text: 'Item',
-    column_id: 0
+    text: 'Item #1',
+    column_id: 1
+  },
+  {
+    id: 2,
+    text: 'Item #2',
+    column_id: 2
+  },
+  {
+    id: 3,
+    text: 'Item #3',
+    column_id: 1
   }
 ];
 

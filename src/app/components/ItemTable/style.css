@@ -16,13 +16,13 @@
 }
 
 .itemTable tr {
-    background-color: #bcc0c7;
-    color: #f2f3f4;
+    background-color: #f2f3f4;
+    color: #79818f;
 }
   
 .itemTable  tr:nth-child(even){
-    background-color: #f2f3f4;
-    color: #79818f;
+    background-color: #bcc0c7;
+    color: #f2f3f4;
 }
 /*   
 .itemTable  tr:hover {
