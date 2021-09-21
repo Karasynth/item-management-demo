@@ -1,0 +1,14 @@
+/* .addItemPanel element{
+} */
+
+.addItemButton{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 100%;
+    padding: 10px;
+}
+
+.label {
+    font-size: 12px;
+}

@@ -4,7 +4,7 @@ import { RouteComponentProps } from 'react-router';
 import { useSelector } from 'react-redux';
 // import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'app/reducers';
-import { Header, Grid } from 'app/components';
+import { Header, Grid, AddItemPanel } from 'app/components';
 
 
 export namespace App {
@@ -24,10 +24,10 @@ export const App = ({ history, location }: App.Props) => {
       <Header />
       <Grid>
         <Grid.Column size='col-3'>
-          abc
+          <AddItemPanel /> 
         </Grid.Column>
-        <Grid.Column size='col-3'>
-          xyz
+        <Grid.Column size='col-9'>
+          {/* Table goes here */}
         </Grid.Column>
       </Grid>
     </div>

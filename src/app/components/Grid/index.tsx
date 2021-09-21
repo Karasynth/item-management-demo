@@ -4,7 +4,7 @@ import style from './style.css';
 
 export namespace Grid {
   export interface Props {
-    children: React.ReactNode
+    children: React.ReactNode,
   }
 }
 

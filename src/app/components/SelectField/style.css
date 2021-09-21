@@ -1,0 +1,11 @@
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #9aa0ab;
+    border: 2px solid white;
+    margin-bottom: 15px;
+}
+
+.input.middle:focus {
+    outline-width: 0;
+}

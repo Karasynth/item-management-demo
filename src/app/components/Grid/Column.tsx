@@ -8,9 +8,9 @@ export namespace Column {
   }
 }
 
-export const Column = ({ size, children }: Column.Props): JSX.Element => {
+export const Column = ({ size="", children}: Column.Props): JSX.Element => {
   return (
-    <div className={style.column}>
+    <div className={`${style.column} ${style[size]}`} > 
         {children}
     </div>
   );
