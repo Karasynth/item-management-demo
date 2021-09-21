@@ -1,0 +1,50 @@
+.itemTable {
+  font-family: 'Merriweather', serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.itemTable td {
+    position: relative;
+}
+
+.itemTable  td, .itemTable  th {
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+.itemTable tr {
+    background-color: #bcc0c7;
+    color: #f2f3f4;
+}
+  
+.itemTable  tr:nth-child(even){
+    background-color: #f2f3f4;
+    color: #79818f;
+}
+/*   
+.itemTable  tr:hover {
+    background-color: #ddd;
+
+} */
+  
+.itemTable  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-weight: 200;
+
+    background: rgb(76,87,107);
+    background: linear-gradient(0deg, rgba(76,87,107,1) 0%, rgba(174,189,208,1) 100%);
+}
+
+.icon{
+    position: absolute;
+    right: 15px;
+    top: 13px;
+    font-size: 25px;
+}

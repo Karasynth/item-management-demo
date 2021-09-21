@@ -1,16 +1,17 @@
 import React from 'react';
 import { Column } from './Column';
-import style from './style.css';
+import styleSheet from './style.css';
 
 export namespace Grid {
   export interface Props {
     children: React.ReactNode,
+    style?: any,
   }
 }
 
-export const Grid = ({ children }: Grid.Props): JSX.Element => {
+export const Grid = ({ children, style }: Grid.Props): JSX.Element => {
   return (
-    <div className={style.row}>
+    <div className={styleSheet.row} style={style}>
         {children}
     </div>
   );
