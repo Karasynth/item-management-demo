@@ -1,7 +1,10 @@
 .row { 
     display:flex;
     flex-wrap: wrap;
-    
+}
+
+.column:last-child {
+    padding-right: 0px !important;
 }
   
 .column {

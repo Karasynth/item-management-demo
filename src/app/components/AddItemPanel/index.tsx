@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputField, SelectField } from 'app/components';
 import style from "./style.css";
-import {ItemActions, useItemActions } from 'app/actions'
+import {ItemActions, useItemActions, useFilterActions, FilterActions } from 'app/actions'
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from 'app/reducers';
 
@@ -14,9 +14,13 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
 
   const dispatch = useDispatch();
   const itemActions = useItemActions(dispatch);
+  const filterActions = useFilterActions(dispatch);
 
-  const newItem = useSelector((state: RootState) => {
-    return state.newItem;
+  const {newItem, filter} = useSelector((state: RootState) => {
+    return {
+      newItem: state.newItem,
+      filter: state.filter,
+    };
   });
 
   const handleAddItem = React.useCallback((i): void => {
@@ -31,6 +35,10 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
   const handleColumnChange = React.useCallback((value): void => {
     itemActions.editItemColmun(value); 
   }, [ItemActions]);
+
+  const handleSearchChange = React.useCallback((value): void => {
+    filterActions.setFilter(value); 
+  }, [FilterActions]);
 
   return (
     <div className={style.addItemPanel}>
@@ -60,8 +68,8 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
       <InputField 
         placeholder='SEARCH'
         icon="fa fa-search"
-        onChange={handleTextChange}
-        value=""
+        onChange={handleSearchChange}
+        value={filter}
       />
     </div>
   );

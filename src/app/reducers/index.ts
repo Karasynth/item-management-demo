@@ -2,6 +2,7 @@ import { combineReducers } from 'redux';
 import { RootState } from './state';
 import { itemsReducer } from './items';
 import { newItemReducer } from './newItem';
+import { filterReducer } from './filter';
 
 // import {persistStore, persistReducer} from "redux-persist";
 import {persistReducer} from "redux-persist";
@@ -19,4 +20,5 @@ export { RootState };
 export const rootReducer = combineReducers({
   items: persistedReducer,
   newItem: newItemReducer,
+  filter: filterReducer,
 });

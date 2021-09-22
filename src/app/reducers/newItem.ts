@@ -1,7 +1,6 @@
 import { handleActions } from 'redux-actions';
 import { RootState } from './state';
 import { ItemActions } from 'app/actions/items';
-import { ItemModel } from 'app/models';
 
 const initialState: RootState.NewItemState = {
   id: 0,
@@ -9,7 +8,7 @@ const initialState: RootState.NewItemState = {
   column_id: 0
 };
 
-export const newItemReducer = handleActions<RootState.NewItemState, ItemModel>(
+export const newItemReducer = handleActions<RootState.NewItemState, any>(
   {
     [ItemActions.Type.EDIT_ITEM_COLUMN]: (state, action) => {
       return {

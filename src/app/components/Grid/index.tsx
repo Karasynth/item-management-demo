@@ -12,7 +12,7 @@ export namespace Grid {
 export const Grid = ({ children, style }: Grid.Props): JSX.Element => {
   return (
     <div className={styleSheet.row} style={style}>
-        {children}
+      {children}
     </div>
   );
 };
