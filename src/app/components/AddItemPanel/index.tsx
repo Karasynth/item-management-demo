@@ -23,9 +23,17 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
     };
   });
 
-  const handleAddItem = React.useCallback((i): void => {
-    itemActions.addItem(i); 
-    itemActions.clearNewItem(); 
+  const handleAddItem = React.useCallback((item): void => {
+    if (!item.text) {
+      alert("Please enter item text.");
+    }
+    else if (item.column_id == 0) {
+      alert("Please select a column.");
+    }
+    else {
+      itemActions.addItem(item); 
+      itemActions.clearNewItem(); 
+    }
   }, [ItemActions]);
 
   const handleTextChange = React.useCallback((value): void => {
