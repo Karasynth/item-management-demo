@@ -12,13 +12,58 @@ const initialState: RootState.ItemState = [
   {
     id: 2,
     text: 'Item #2',
-    column_id: 2
+    column_id: 1
   },
   {
     id: 3,
     text: 'Item #3',
     column_id: 1
-  }
+  },
+  {
+    id: 4,
+    text: 'Item #4',
+    column_id: 1
+  },
+  {
+    id: 5,
+    text: 'Item #5',
+    column_id: 1
+  },
+  {
+    id: 6,
+    text: 'Item #6',
+    column_id: 1
+  },
+  {
+    id: 7,
+    text: 'Item #7',
+    column_id: 1
+  },
+  {
+    id: 8,
+    text: 'Item #8',
+    column_id: 2
+  },
+  {
+    id: 9,
+    text: 'Item #9',
+    column_id: 2
+  },
+  {
+    id: 10,
+    text: 'Item #10',
+    column_id: 2
+  },
+  {
+    id: 11,
+    text: 'Item #1',
+    column_id: 2
+  },
+  {
+    id: 12,
+    text: 'Item #12',
+    column_id: 2
+  },
 ];
 
 export const itemsReducer = handleActions<RootState.ItemState, ItemModel>(
