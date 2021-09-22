@@ -4,15 +4,16 @@ import style from './style.css';
 export namespace SelectField {
   export interface Props {
     placeholder: string,
+    value: number,
   }
 }
 
-export const SelectField = ({ placeholder='', }: SelectField.Props): JSX.Element => {
+export const SelectField = ({ placeholder='', value}: SelectField.Props): JSX.Element => {
   return (
     <select
       className={style.input}
       placeholder={placeholder}
-      value={""}
+      value={value}
     >
       <option disabled> {placeholder} </option>
       <option value={1}>COLUMN 1</option>
