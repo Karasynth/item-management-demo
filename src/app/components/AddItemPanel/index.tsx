@@ -67,7 +67,6 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
       >
         ADD ITEM
       </button>
-
       <label 
         className={style.label}
       >

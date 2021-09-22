@@ -5,12 +5,14 @@
     border: 2px solid white;
     margin-bottom: 15px;
     color: white;
+    cursor: pointer;
 }
 
 
 
 .option {
     color: white;
+    cursor: pointer;
 }
 
 .input.middle:focus {

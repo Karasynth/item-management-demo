@@ -41,6 +41,11 @@ export const ItemTable = ({ title, items }: ItemTable.Props): JSX.Element => {
                         </tr>
                     )
                 })}
+                {items.length === 0 && (
+                    <tr>
+                        <td>No items to display.</td>
+                    </tr>
+                )}
             </tbody>
         </table>
     );

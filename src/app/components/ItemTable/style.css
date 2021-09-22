@@ -47,4 +47,9 @@
     right: 15px;
     top: 13px;
     font-size: 25px;
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: #9cadc2;
 }

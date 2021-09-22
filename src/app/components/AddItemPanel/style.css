@@ -9,6 +9,13 @@
     padding: 10px;
 }
 
+.addItemButton:hover{
+    color: #79818f;
+    background-color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
 .label {
     font-size: 12px;
 }
