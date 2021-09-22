@@ -1,21 +1,15 @@
-# Frontend Boilerplate with React, Redux & TypeScript
+# Laura Thomson - Item Management Demo
 
-A bare minimum react-hooks-redux-webpack-typescript boilerplate with TodoMVC example.
-
-Note that this project does not include **Server-Side Rendering**, **Static code analysis**, **Testing Frameworks**
-If needed, please fork this repository and add your own that meets your requirements.
-
-Ideal for creating React apps from the scratch.
+Hey there! Laura here, showing off a small demo project!
 
 ## Contains
 
-- [x] [Typescript](https://www.typescriptlang.org/) 3.8
-- [x] [React](https://facebook.github.io/react/) 16.12
-- [x] [Redux](https://github.com/reactjs/redux) 4
-- [x] [Redux Thunk](https://github.com/reduxjs/redux-thunk) 2.3
-- [x] [React Router](https://github.com/ReactTraining/react-router) 5.1
-- [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
-- [x] [TodoMVC example](http://todomvc.com)
+- Add / Delete items in a list using redux store
+- Filter items by column
+- Error messages when trying to submit incomplete items
+- Responsive page design
+- CSS in JS styled components
+- Typescript for all actions, states, functions, ect
 
 ### Build tools
 
