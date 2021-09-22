@@ -11,7 +11,7 @@ export namespace AddItemPanel {
 }
 
 export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
-  
+
   const dispatch = useDispatch();
   const itemActions = useItemActions(dispatch);
 
@@ -19,8 +19,17 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
     return state.newItem;
   });
 
-  const handleAddItem = React.useCallback((): void => {
-    itemActions.addItem(newItem); 
+  const handleAddItem = React.useCallback((i): void => {
+    itemActions.addItem(i); 
+    itemActions.clearNewItem(); 
+  }, [ItemActions]);
+
+  const handleTextChange = React.useCallback((value): void => {
+    itemActions.editItemText(value); 
+  }, [ItemActions]);
+
+  const handleColumnChange = React.useCallback((value): void => {
+    itemActions.editItemColmun(value); 
   }, [ItemActions]);
 
   return (
@@ -28,15 +37,17 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
       <InputField 
         placeholder='ENTER ITEM'
         value={newItem.text}
+        onChange={handleTextChange}
       />
       <SelectField 
         placeholder='CHOOSE COLUMN'
         value={newItem.column_id}
+        onChange={handleColumnChange}
       />
       <button 
         className={style.addItemButton}
         style={{margin: "100px 0 15px 0"}}
-        onClick={handleAddItem}
+        onClick={()=>handleAddItem(newItem)}
       >
         ADD ITEM
       </button>
@@ -49,6 +60,7 @@ export const AddItemPanel = ({  }: AddItemPanel.Props): JSX.Element => {
       <InputField 
         placeholder='SEARCH'
         icon="fa fa-search"
+        onChange={handleTextChange}
         value=""
       />
     </div>

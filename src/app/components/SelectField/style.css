@@ -4,6 +4,13 @@
     background-color: #9aa0ab;
     border: 2px solid white;
     margin-bottom: 15px;
+    color: white;
+}
+
+
+
+.option {
+    color: white;
 }
 
 .input.middle:focus {

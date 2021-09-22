@@ -6,10 +6,16 @@ export namespace InputField {
     placeholder: string,
     icon?: string,
     value: string,
+    onChange: any,
   }
 }
 
-export const InputField = ({ placeholder='', icon, value }: InputField.Props): JSX.Element => {
+export const InputField = ({ placeholder='', icon, value, onChange }: InputField.Props): JSX.Element => {
+
+  const handleOnChange = (e:any) => {
+    onChange(e.target.value)
+  };
+
   return (
     <div style={{width: "100%", position: 'relative'}}>
       <input 
@@ -17,6 +23,7 @@ export const InputField = ({ placeholder='', icon, value }: InputField.Props): J
         className={style.input}
         placeholder={placeholder}
         value={value}
+        onChange={handleOnChange}
       />
       {icon && 
         <i 

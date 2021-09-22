@@ -7,6 +7,19 @@
     box-sizing:border-box;
 }
 
+.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #c3c7cd;
+}
+.input::-moz-placeholder { /* Firefox 19+ */
+    color: #c3c7cd;
+}
+.input:-ms-input-placeholder { /* IE 10+ */
+    color: #c3c7cd;
+}
+.input:-moz-placeholder { /* Firefox 18- */
+    color: #c3c7cd;
+}
+
 .input.middle:focus {
     outline-width: 0;
 }
