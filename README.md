@@ -2,6 +2,9 @@
 
 Hey there! Laura here, showing off a small demo project!
 
+Check it out here:
+https://karasynth.github.io/item-management-demo/
+
 ## Contains
 
 - Add / Delete items in a list using redux store
